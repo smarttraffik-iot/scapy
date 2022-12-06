@@ -21,8 +21,7 @@ from scapy.config import conf
 from scapy import consts
 from scapy.data import ARPHDR_ETHER, ARPHDR_LOOPBACK, ARPHDR_METRICOM, \
     DLT_ETHERNET_MPACKET, DLT_LINUX_IRDA, DLT_LINUX_SLL, DLT_LINUX_SLL2, \
-    DLT_LOOP, DLT_NULL, ETHER_ANY, ETHER_BROADCAST, ETHER_TYPES, ETH_P_ARP, \
-    ETH_P_MACSEC
+    DLT_NULL, ETHER_ANY, ETHER_BROADCAST, ETHER_TYPES, ETH_P_ARP, ETH_P_MACSEC
 from scapy.error import warning, ScapyNoDstMacException, log_runtime
 from scapy.fields import (
     BCDFloatField,
@@ -720,8 +719,8 @@ conf.l2types.register(DLT_LINUX_SLL, CookedLinux)
 conf.l2types.register(DLT_LINUX_SLL2, CookedLinuxV2)
 conf.l2types.register(DLT_ETHERNET_MPACKET, MPacketPreamble)
 conf.l2types.register_num2layer(DLT_LINUX_IRDA, CookedLinux)
-conf.l2types.register(DLT_LOOP, Loopback)
-conf.l2types.register_num2layer(DLT_NULL, Loopback)
+conf.l2types.register(DLT_NULL, Loopback)
+conf.l2types.register_num2layer(DLT_LOOP, Loopback)
 
 conf.l3types.register(ETH_P_ARP, ARP)
 
