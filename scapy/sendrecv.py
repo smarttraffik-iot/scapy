@@ -20,6 +20,7 @@ from scapy.compat import plain_str
 from scapy.data import ETH_P_ALL
 from scapy.config import conf
 from scapy.error import warning
+from scapy.error import Scapy_NetworkDown
 from scapy.interfaces import (
     network_name,
     resolve_iface,
@@ -1194,6 +1195,8 @@ class AsyncSniffer(object):
                             s.close()
                         except Exception as ex2:
                             msg = " close() failed with '%s'" % ex2
+                        if "Errno 100" in str(ex):
+                            raise Scapy_NetworkDown
                         warning(
                             "Socket %s failed with '%s'." % (s, ex) + msg
                         )

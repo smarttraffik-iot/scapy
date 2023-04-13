@@ -29,6 +29,10 @@ from scapy.compat import (
 )
 
 
+class Scapy_NetworkDown(Exception):
+    pass
+
+
 class Scapy_Exception(Exception):
     pass
 
