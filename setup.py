@@ -32,7 +32,7 @@ def get_long_description():
 # https://packaging.python.org/guides/distributing-packages-using-setuptools/
 setup(
     name='scapy',
-    version=__import__('scapy').VERSION,
+    version='2.4.5.1production0',
     packages=find_packages(),
     data_files=[('share/man/man1', ["doc/scapy.1"])],
     package_data={
@@ -66,7 +66,6 @@ setup(
 
     # Metadata
     author='Philippe BIONDI',
-    fork='v2.4.5.1',
     author_email='phil(at)secdev.org',
     maintainer='Pierre LALET, Gabriel POTTER, Guillaume VALADON',
     description='Scapy: interactive packet manipulation tool',
