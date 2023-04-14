@@ -77,7 +77,8 @@ setup(
         'Documentation': 'https://scapy.readthedocs.io',
         'Source Code': 'https://github.com/secdev/scapy/',
     },
-    download_url='https://github.com/secdev/scapy/tarball/master',
+    #download_url='https://github.com/secdev/scapy/tarball/master',
+    download_url='https://github.com/smarttraffik-iot/scapy.git/bump2version',
     keywords=["network"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
