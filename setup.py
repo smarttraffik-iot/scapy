@@ -66,6 +66,7 @@ setup(
 
     # Metadata
     author='Philippe BIONDI',
+    fork='v2.4.5.1',
     author_email='phil(at)secdev.org',
     maintainer='Pierre LALET, Gabriel POTTER, Guillaume VALADON',
     description='Scapy: interactive packet manipulation tool',
