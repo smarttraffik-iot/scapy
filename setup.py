@@ -31,7 +31,7 @@ def get_long_description():
 
 # https://packaging.python.org/guides/distributing-packages-using-setuptools/
 setup(
-    name='st-scapy',
+    name='scapy',
     version='2.4.5-1.0',
     packages=find_packages(),
     data_files=[('share/man/man1', ["doc/scapy.1"])],
